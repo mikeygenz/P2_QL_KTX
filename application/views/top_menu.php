@@ -1,8 +1,7 @@
 <html>
-    <div class="OPT">
-        <a class="opt" href="../index.php">Thoát</a>
-        <a class="opt" href="signup.php">Đăng ký</a>
-        <a class="opt" href="signin.php">Đăng nhập</a>
-        <a class="opt" href="home.php">Trang chủ</a>
-    </div>
+<div class="OPT">
+    <a class="opt-name" href="#"> <?php echo $_SESSION["name_manager"], ", ", $_SESSION["position"] ?></a>
+    <a class="opt" href="home.php">Trang chủ</a>
+</div>
+
 </html>

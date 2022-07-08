@@ -1,0 +1,31 @@
+.add-dormitory {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+label {
+    float: left;
+}
+input {
+    float: right;
+    min-width: 500px;
+}
+.add-dormitory-input {
+    height: 20px;
+    margin: 20px;
+}
+.add-dormitory-input-note {
+    height: 150px;
+    margin: 20px;
+}
+.input-text-textarea {
+    min-height: 100px;
+    min-width: 700px;
+}
+.back-button {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}

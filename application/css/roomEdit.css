@@ -1,0 +1,18 @@
+.edit_room {
+    min-height: 460px;
+    width: 600px;
+    margin: 50px;
+}
+
+.edit-room-input {
+    margin: 20px;
+}
+
+.input-text-textarea {
+    min-height: 90px;
+    min-width: 500px;
+}
+.back-button {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}

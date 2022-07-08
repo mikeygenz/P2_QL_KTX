@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +11,26 @@
     <link href="../css/home.css" rel="stylesheet">
     <title>KTX</title>
 </head>
+
 <body>
     <div class="header" style="background-image: url('img/ktx_tittle.jpg')">
 
     </div>
-    <div class="OPT">
-            <a class="opt" href="../index.php">Thoát</a>
-            <a class="opt" href="signup.php">Đăng ký</a>
-            <a class="opt" href="signin.php">Đăng nhập</a>
-            <a class="opt" href="home.php">Trang chủ</a>
-    </div>
+    <?php
+    session_start();
+    ?>
+    <?php
+    include_once("./top_menu.php");
+    ?>
     <div class="main-content">
         <div class="row">
             <?php
-                include_once("./navbar.php") 
+            include_once("./navbar.php")
             ?>
             <div class="col-10">
                 <div class="content-frame">
-                    <div id="main_content">
+                    <div id="main-content">
+
                     </div>
                 </div>
             </div>
@@ -36,4 +39,5 @@
     <div class="footer">
     </div>
 </body>
+
 </html>

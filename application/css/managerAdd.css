@@ -1,0 +1,28 @@
+.add-manager {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add-manager-input {
+    margin: 20px;
+    height: 30px;
+}
+
+.back-button {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+label {
+    float: left;
+    text-align: left;
+    min-width: 200px;
+}
+input {
+    float: right;
+    min-width: 500px;
+}

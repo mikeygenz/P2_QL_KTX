@@ -1,0 +1,32 @@
+.edit-register {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.edit-register-input {
+    margin: 20px;
+    height: 30px;
+}
+
+.input-text-textarea {
+    min-height: 90px;
+    min-width: 500px;
+}
+.back-button {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+label {
+    float: left;
+    min-width: 200px;
+    text-align: left;
+}
+input {
+    float: right;
+    min-width: 500px;
+}
