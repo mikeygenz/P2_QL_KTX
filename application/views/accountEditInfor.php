@@ -31,28 +31,33 @@
                 $manager = $c_Manager->getManager($id_manager);
                 $row = $manager->fetch_assoc();
                 ?>
-                <div class="edit-infor-manager">
-                    <form action="../controllers/manager.php" method="post">
-                        <input style="display: none" type="text" name="id_manager" value="<?php echo $id_manager ?>">
-                        <div class="edit-infor-manager-input">
-                            <label for="name_manager">Tên nhân viên:</label>
-                            <input type="text" name="name_manager" required value="<?php  echo $row["name_manager"] ?>" />
+                <div class="sub-content">
+                    <div class="edit-infor-manager">
+                        <form action="../controllers/manager.php" method="post">
+                            <input style="display: none" type="text" name="id_manager" value="<?php echo $id_manager ?>">
+                            <div class="edit-infor-manager-input">
+                                <label for="name_manager">Tên nhân viên:</label>
+                                <input type="text" name="name_manager" required value="<?php echo $row["name_manager"] ?>" />
+                            </div>
+                            <div class="edit-infor-manager-input">
+                                <label for="identity_card">Căn cước công dân:</label>
+                                <input type="text" name="identity_card" required value="<?php echo $row["identity_card"] ?>" />
+                            </div>
+                            <div class="edit-infor-manager-input">
+                                <label for="phone_number">Số điện thoại:</label>
+                                <input type="text" name="phone_number" required value="<?php echo $row["phone_number"] ?>" />
+                            </div>
+                            <div class="edit-infor-manager-input">
+                                <button class="save-infor" type="submit" name="editInforManager">Lưu thông tin</button>
+                            </div>
+                        </form>
+                        <div class="btn-back">
+                            <button class="back-button" type="button" onclick="quay_lai_trang_truoc()">Quay lại</button>
                         </div>
-                        <div class="edit-infor-manager-input">
-                            <label for="identity_card">Căn cước công dân:</label>
-                            <input type="text" name="identity_card" required value="<?php  echo $row["identity_card"] ?>" />
-                        </div>
-                        <div class="edit-infor-manager-input">
-                            <label for="phone_number">Số điện thoại:</label>
-                            <input type="text" name="phone_number" required value="<?php  echo $row["phone_number"] ?>" />
-                        </div>
-                        <div class="edit-infor-manager-input">
-                            <button type="submit" name="editInforManager">Lưu thông tin</button>
-                        </div>
-                    </form>
-
+                    </div>
+                    <!-- <button class="back-button" type="button" onclick="quay_lai_trang_truoc()">Quay lại</button> -->
                 </div>
-                <button class="back-button" type="button" onclick="quay_lai_trang_truoc()">Quay lại</button>
+
             </div>
         </div>
         <script>

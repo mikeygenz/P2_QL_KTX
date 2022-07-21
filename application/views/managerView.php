@@ -20,7 +20,6 @@
         <?php include_once("header.php") ?>
         <?php include_once("top_menu.php") ?>
         <?php include_once("../controllers/permission.php") ?>
-        <?php echo  $_SESSION["permission"]; ?>
     </div>
     <div class="main-content">
         <div class="row">
@@ -31,6 +30,7 @@
                 $c_Manager = new C_Manager;
                 $managerList = $c_Manager->invoke();
                 ?>
+                <div class="sub-content">
                 <div class="view-manager">
                     <table>
                         <tr style="height:30px">
@@ -38,8 +38,8 @@
                             <th>Vai trò</th>
                             <th>Căn cước công dân</th>
                             <th>Số điện thoại</th>
-                            <th>Tên đăng nhập</th>
-                            <th>Mật khẩu</th>
+                            <!-- <th>Tên đăng nhập</th>
+                            <th>Mật khẩu</th> -->
                             <th>Tùy chỉnh</th>
                         </tr>
                         <?php
@@ -53,11 +53,11 @@
                                         <td><?php echo $row["position"]; ?></td>
                                         <td><?php echo $row["identity_card"]; ?></td>
                                         <td><?php echo $row["phone_number"]; ?></td>
-                                        <td><?php echo $row["username"]; ?></td>
-                                        <td><?php echo $row["password"]; ?></td>
+                                        <!-- <td><?php echo $row["username"]; ?></td>
+                                        <td><?php echo $row["password"]; ?></td> -->
                                         <input style="display:none" type="text" name="id_manager" value="<?php echo $row["id_manager"] ?>">
                                         <td>
-                                            <button class="btn" type="submit" name="deleteManager">Xóa</button>
+                                            <button class="delete-btn" type="submit" name="deleteManager">Xóa</button>
                                         </td>
                                     </form>
                                 </tr>
@@ -71,6 +71,8 @@
 
                     </table>
                 </div>
+                </div>
+
             </div>
         </div>
     </div>

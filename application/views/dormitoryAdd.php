@@ -25,34 +25,38 @@
             <?php include_once("navbar.php") ?>
             <div class="col-10">
                 <div class="add-dormitory">
-                    <form action="../controllers/dormitory.php" method="post">
-                        <div class="add-dormitory-input">
-                            <label for="name">Tên nhà KTX:</label>
-                            <input type="text" name="name_dormitory" required />
+                    <div class="add-dormitory-infor">
+                        <form action="../controllers/dormitory.php" method="post">
+                            <div class="add-dormitory-input">
+                                <label for="name">Tên nhà KTX:</label>
+                                <input type="text" name="name_dormitory" required />
+                            </div>
+                            <div class="add-dormitory-input">
+                                <label for="rooms">Số phòng: </label>
+                                <input type="text" name="rooms" required />
+                            </div>
+                            <div class="add-dormitory-input">
+                                <label for="beds">Số giường mỗi phòng: </label>
+                                <input type="text" name="beds" required />
+                            </div>
+                            <div class="add-dormitory-input">
+                                <label for="price">Gía phòng: </label>
+                                <input type="text" name="price" required />
+                            </div>
+                            <div class="add-dormitory-input-note">
+                                <label for="note">Cơ sở vật chất: </label> <br>
+                                <textarea class="input-text-textarea" type="text" name="note"></textarea>
+                            </div>
+                            <div class="add-dormitory-input">
+                                <button class="save-infor" type="submit" name="createDormitory">Lưu thông tin</button>
+                            </div>
+                        </form>
+                        <div class="btn-back">
+                            <button class="back-button" type="button" onclick="quay_lai_trang_truoc()">Quay lại</button>
                         </div>
-                        <div class="add-dormitory-input">
-                            <label for="rooms">Số phòng: </label>
-                            <input type="text" name="rooms" required />
-                        </div>
-                        <div class="add-dormitory-input">
-                            <label for="beds">Số giường mỗi phòng: </label>
-                            <input type="text" name="beds" required />
-                        </div>
-                        <div class="add-dormitory-input">
-                            <label for="price">Gía phòng: </label>
-                            <input type="text" name="price" required />
-                        </div>
-                        <div class="add-dormitory-input-note">
-                            <label for="note">Cơ sở vật chất: </label> <br>
-                            <textarea class="input-text-textarea" type="text" name="note"></textarea>
-                        </div>
-                        <div class="add-dormitory-input">
-                            <button type="submit" name="createDormitory">Lưu thông tin</button>
-                        </div>
-                    </form>
-
+                    </div>
                 </div>
-                <button class="back-button" type="button" onclick="quay_lai_trang_truoc()">Quay lại</button>
+                <!-- <button class="back-button" type="button" onclick="quay_lai_trang_truoc()">Quay lại</button> -->
             </div>
         </div>
         <script>

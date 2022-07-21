@@ -1,7 +1,7 @@
 .add-register {
     min-height: 500px;
-    width: 100%;
-    display: flex;
+    width: 750px;
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -17,8 +17,23 @@
     min-width: 500px;
 }
 .back-button {
-    margin-left: 50px;
-    margin-bottom: 50px;
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+}
+.back-button:hover {
+    background-color: gainsboro;
+}
+.btn-back {
+    float: left;
+}
+.save-infor {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+.save-infor:hover  {
+    background-color: #008fff;
 }
 
 label {

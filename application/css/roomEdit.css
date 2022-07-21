@@ -1,18 +1,50 @@
 .edit_room {
-    min-height: 460px;
-    width: 600px;
-    margin: 50px;
+    min-height: 500px;
+    width: 750px;
+    display: block;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
 }
 
 .edit-room-input {
-    margin: 20px;
+    padding: 20px;
 }
-
-.input-text-textarea {
-    min-height: 90px;
+label {
+    float: left;
+}
+input {
+    float: right;
     min-width: 500px;
 }
+.input-text-textarea {
+    min-height: 90px;
+    min-width: 700px;
+}
 .back-button {
-    margin-left: 50px;
-    margin-bottom: 50px;
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+}
+.back-button:hover {
+    background-color: gainsboro;
+}
+.btn-back {
+    float: left;
+}
+.save-infor {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+.save-infor:hover  {
+    background-color: #008fff;
+}
+.delete-infor {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+.delete-infor:hover  {
+    background-color: #ff0000;
 }

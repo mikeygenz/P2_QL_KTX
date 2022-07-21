@@ -32,6 +32,7 @@
                 $manager = $c_Manager->getManager($id_manager);
                 $row = $manager->fetch_assoc();
                 ?>
+                <div class="sub-content">
                 <div class="edit-manager">
                     <form action="../controllers/manager.php" method="post">
                         <div class="edit-manager-input">
@@ -59,12 +60,14 @@
                             <input type="text" name="password" value="<?php $row["password"] ?>" />
                         </div>
                         <div class="edit-manager-input">
-                            <button type="submit" name="createManager">Lưu thông tin</button>
+                            <button class="save-infor" type="submit" name="createManager">Lưu thông tin</button>
                         </div>
                     </form>
 
                 </div>
                 <button class="back-button" type="button" onclick="quay_lai_trang_truoc()">Quay lại</button>
+                </div>
+
             </div>
         </div>
         <script>

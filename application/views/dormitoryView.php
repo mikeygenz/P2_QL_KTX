@@ -29,6 +29,7 @@
                 $c_Dormitory = new C_Dormitory;
                 $dormList = $c_Dormitory->invoke();
                 ?>
+                <div class="sub-content">
                 <div class="view_dorm">
                     <table>
                         <tr style="height:30px">
@@ -53,11 +54,11 @@
                                         <td><?php echo $row["note"]; ?></td>
                                         <input style="display:none" type="text" name="name_dormitory" value="<?php echo $row["name_dormitory"] ?>">
                                         <td>
-                                            <button class="btn" type="submit" name="deleteDormitory">Xóa</button>
+                                            <button class="delete-btn" type="submit" name="deleteDormitory">Xóa</button>
                                             <!-- </form>
                                     <form action="../controllers/dormitory.php" method="post"> -->
                                             <input style="display:none" type="text" name="name_dormitory" value="<?php echo $row["name_dormitory"] ?>">
-                                            <button class="btn" type="submit" name="viewDormitory">Xem</button>
+                                            <button class="edit-btn" type="submit" name="viewDormitory">Xem</button>
                                     </form>
                                     </td>
                                 </tr>
@@ -71,6 +72,8 @@
 
                     </table>
                 </div>
+                </div>
+
             </div>
         </div>
     </div>

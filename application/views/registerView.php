@@ -24,6 +24,7 @@
         <div class="row">
             <?php include_once("navbar.php") ?>
             <div class="col-10">
+                <div class="sub-content">
                 <div class="view-register">
                     <div>
                         <form action="../controllers/register.php" method="post"></form>
@@ -46,14 +47,14 @@
                             </tr>
                             <tr>
                                 <form action="../views/registerView.php" method="post">
-                                    <td><input type="text" name="name_dormitory" /></td>
-                                    <td><input type="text" name="name_room" /></td>
-                                    <td><input type="text" name="name_student" /></td>
-                                    <td><input type="text" name="identity_card" /></td>
-                                    <td><input type="text" name="semester" /></td>
-                                    <td><input type="text" name="phone_number" /></td>
+                                    <td><input class="input-res-search" type="text" name="name_dormitory" /></td>
+                                    <td><input class="input-res-search" type="text" name="name_room" /></td>
+                                    <td><input class="input-res-search-name" type="text" name="name_student" /></td>
+                                    <td><input class="input-res-search" type="text" name="identity_card" /></td>
+                                    <td><input class="input-res-search" type="text" name="semester" /></td>
+                                    <td><input class="input-res-search" type="text" name="phone_number" /></td>
                                     <td>
-                                        <button class="btn" type="submit" name="searchRegister">Tìm </button>
+                                        <button class="find-btn" type="submit" name="searchRegister">Tìm </button>
                                 </form>
                                 </td>
                             </tr>
@@ -72,8 +73,8 @@
                                             <td><?php echo $row["phone_number"]; ?></td>
                                             <td>
                                                 <input style="display:none" type="text" name="id_register" value="<?php echo $row["id_register"] ?>">
-                                                <button class="btn" type="submit" name="deleteRegister">Xóa </button>
-                                                <button class="btn" type="submit" name="editRegister">Sửa </button>
+                                                <button class="delete-btn" type="submit" name="deleteRegister">Xóa </button>
+                                                <button class="edit-btn" type="submit" name="editRegister">Sửa </button>
                                         </form>
                                         </td>
                                     </tr>
@@ -87,6 +88,8 @@
                         </form>
                     </div>
                 </div>
+                </div>
+
             </div>
         </div>
     </div>

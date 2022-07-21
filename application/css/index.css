@@ -38,8 +38,10 @@ input {
     width: 100px;
     border-radius: 10px;
     text-align: center;
-    background-color: cornflowerblue;
     margin-top: 20px;
+}
+.submit-input:hover {
+    background-color: cornflowerblue;
 }
 .login-username-input {
     margin: 10px;
